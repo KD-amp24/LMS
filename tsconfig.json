@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* BASIC OPTIONS */
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* STRICTNESS */
+    "strict": true,
+    "skipLibCheck": true,      // speed up builds without losing safety
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitOverride": true,
+    "useUnknownInCatchVariables": false,
+
+    /* PATH ALIASES */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    /* OUTPUT */
+    "isolatedModules": true,   // allows per‑file transpile (Vite requirement)
+    "esModuleInterop": true,
+    "importsNotUsedAsValues": "error"
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
